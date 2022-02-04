@@ -8,7 +8,7 @@ library(dplyr)
 # 연습용 데아터
 # mpg(1999~2008년 사이 미국에서 출시된 자동차 234종 연비관련 정보)
 mpg
-View(mpg)
+View(mpg) 
 str(mpg)
 #  tibble 형태의 데이터를 dataframe구조로 변경하는 방법
 mpg=data.frame(mpg)
@@ -52,7 +52,7 @@ ggplot(mdh, aes(x=manufacturer, mean_hwy))+geom_col(aes(fill=drv))
 
 
 # 구동방식(drv)별 빈도수 그래프
-# 빈도그래프를 그릴때 y축이 빈도수로 결정되기 때문에 y축을 지정하지 않는다.
+# 빈도그래프를 그릴때 y축이 빈도수로 결정되기 때문에 y축을 지정하지 않는다. 
 ggplot(mpg, aes(x=drv))+geom_bar()
 
 # 제조회사별 차종별 빈도그래프
@@ -64,7 +64,7 @@ list.files()
 
 
 
-
+ 
 titanic<-read.csv("titanic_2.csv",stringsAsFactors = T)
 titanic$Survived <- factor(titanic$Survived)
 summary(titanic)
